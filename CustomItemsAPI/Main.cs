@@ -50,7 +50,7 @@ internal sealed class Main : Plugin<Config>
         CustomHandlersManager.RegisterEventsHandler(revolverHandler);
         CustomHandlersManager.RegisterEventsHandler(scp127Handler);
         CustomHandlersManager.RegisterEventsHandler(coinHandler);
-        CustomHandlersManager.RegisterEventsHandler(armorHandler)
+        CustomHandlersManager.RegisterEventsHandler(armorHandler);
         InventoryExtensions.OnItemRemoved += Subscribed.OnItemRemoved;
         ThrownProjectile.OnProjectileSpawned += Subscribed.ProjectileSpawned;
         CycleController.OnPhaseChanged += Subscribed.PhaseChanged;
@@ -72,7 +72,7 @@ internal sealed class Main : Plugin<Config>
         CustomHandlersManager.UnregisterEventsHandler(revolverHandler);
         CustomHandlersManager.UnregisterEventsHandler(scp127Handler);
         CustomHandlersManager.UnregisterEventsHandler(coinHandler);
-        CustomHandlersManager.UnregisterEventsHandler(armorHandler)
+        CustomHandlersManager.UnregisterEventsHandler(armorHandler);
         InventoryExtensions.OnItemRemoved -= Subscribed.OnItemRemoved;
         ThrownProjectile.OnProjectileSpawned -= Subscribed.ProjectileSpawned;
         CycleController.OnPhaseChanged -= Subscribed.PhaseChanged;
