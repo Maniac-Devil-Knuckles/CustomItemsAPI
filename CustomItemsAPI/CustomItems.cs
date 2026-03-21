@@ -14,9 +14,9 @@ namespace CustomItemsAPI;
 /// </summary>
 public static class CustomItems
 {
-    internal static readonly Dictionary<ushort, CustomItemBase> SerialToCustomItem = [];
+    public static readonly Dictionary<ushort, CustomItemBase> SerialToCustomItem = [];
 
-    internal static readonly HashSet<CustomItemBase> CustomItemBaseList = [];
+    public static readonly HashSet<CustomItemBase> CustomItemBaseList = [];
 
     #region Creating Custom Item
     /// <summary>
